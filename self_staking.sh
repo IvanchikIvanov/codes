@@ -20,6 +20,6 @@ if [ ! $ID ]; then
 	read -p "Enter ID: " ID
 	echo 'export ID='$ID >> $HOME/.bash_profile
 fi
-a=$((RANDOM % 12)) 
+a=$((RANDOM % 1800)) 
 sleep $a
 $CHAIN tx staking delegate $OLLO_VALOPER_ADDRESS 1000000$DENOM --from wallet --chain-id=$ID --fees 500$DENOM -y
