@@ -1,3 +1,4 @@
+#!/bin/bash
 a=$((RANDOM % 3600)) 
 sleep $a
 mande-chaind tx staking create-validator \
