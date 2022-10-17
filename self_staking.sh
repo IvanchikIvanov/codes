@@ -1,12 +1,8 @@
 #!/bin/bash
 read -p "Enter CHAIN : " CHAIN_ID
 sleep 1
-echo 'export CHAIN='$CHAIN_ID >> $HOME/.bash_profile
-sleep 1
 read -p "Enter DENOM: " DENOM
 sleep 1
-echo 'export DENOM='$DENOM >> $HOME/.bash_profile
-source $HOME/.bash_profile
 a=$((RANDOM % 120)) 
 sleep $a
 b=`$CHAIN_ID keys show wallet --bech val`
