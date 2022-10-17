@@ -1,7 +1,9 @@
 #!/bin/bash
-read -p "Enter CHAIN : " CHAIN_ID
+echo "Enter CHAIN : " 
+read CHAIN_ID
 sleep 1
-read -p "Enter DENOM: " DENOM
+echo "Enter DENOM: " 
+read DENOM
 sleep 1
 a=$((RANDOM % 12)) 
 sleep $a
