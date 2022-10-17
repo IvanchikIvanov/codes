@@ -8,3 +8,4 @@ mande-chaind tx staking create-validator \
 --from wallet \
 --moniker $MONIKER\
 --fees 1000mand
+-y
