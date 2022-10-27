@@ -11,4 +11,4 @@ cat 45.147.199.170/adress.csv 45.147.199.172/adress.csv 45.147.199.174/adress.cs
 WALLET_ADDRESS=$(okp4d keys show wallet -a)
 echo $WALLET_ADDRESS &> adress.csv 
 a=`hostname -i`
-scp adress.csv root@45.147.199.104:/root/BACKUP/$CHAIN/$a
+scp adress.csv root@45.147.199.104:/root/BACKUP/$SRC/$a
