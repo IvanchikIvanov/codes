@@ -47,8 +47,8 @@ make install
 $SRC init $NODENAME --chain-id $CHAIN_ID
 
 cd $HOME
-wget -qO $HOME/$SRC_FOLDER/config/genesis.json $SRC_GENESIS
-wget -O $HOME/$SRC_FOLDER/config/addrbook.json $SRC_ADDRBOOK
+wget -qO $HOME/.$SRC/config/genesis.json $SRC_GENESIS
+wget -O $HOME/.$SRC/config/addrbook.json $SRC_ADDRBOOK
 
 echo -e "                     \e[1m\e[32m4. Node optimization and improvement--> \e[0m" && sleep 1
 
