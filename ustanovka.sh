@@ -10,9 +10,6 @@ echo 'export SRC='$SRC >> $HOME/.bash_profile
 read -p "Enter CHAIN_ID: " CHAIN_ID
 echo 'export CHAIN_ID='$CHAIN_ID >> $HOME/.bash_profile
 
-read -p "Enter SRC_REPO: " SRC_REPO
-echo 'export SRC_REPO='$SRC_REPO >> $HOME/.bash_profile
-
 read -p "Enter SRC_GENESIS: " SRC_GENESIS
 echo 'export SRC_GENESIS='$SRC_GENESIS >> $HOME/.bash_profile
 
@@ -21,17 +18,15 @@ echo 'export SRC_ADDRBOOK='$SRC_ADDRBOOK >> $HOME/.bash_profile
 
 read -p "Enter SRC_DENOM: " SRC_DENOM
 echo 'export SRC_DENOM='$SRC_DENOM >> $HOME/.bash_profile
+
 read -p "Enter SRC_SEEDS: " SRC_SEEDS
 echo 'export SRC_SEEDS='$SRC_SEEDS >> $HOME/.bash_profile
-read -p "Enter SRC_PEERS: " SRC_PEERS
-echo 'export SRC_PEERS='$SRC_PEERS >> $HOME/.bash_profile
 
 
 # GIT=https://github.com/okp4/okp4d.git
 # SRC=okp4d
 # CHAIN_ID="okp4-nemeton"
 # SRC_PORT=39
-# SRC_REPO=https://github.com/Source-Protocol-Cosmos/source.git
 # SRC_GENESIS="https://raw.githubusercontent.com/okp4/networks/main/chains/nemeton/genesis.json"
 # SRC_ADDRBOOK="https://raw.githubusercontent.com/obajay/nodes-Guides/main/OKP4/addrbook.json"
 # SRC_DENOM=usource
