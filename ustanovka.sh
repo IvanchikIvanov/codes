@@ -42,7 +42,7 @@ git clone $GIT
 cd $SRC
 make install
 
-$SRC init $OKPDNAME --chain-id $CHAIN_ID
+$Service init $OKPDNAME --chain-id $CHAIN_ID
 
 cd $HOME
 wget -qO $HOME/.$SRC/config/genesis.json $SRC_GENESIS
