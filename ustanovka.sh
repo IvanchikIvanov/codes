@@ -7,6 +7,9 @@ echo 'export GIT='$GIT >> $HOME/.bash_profile
 read -p "Enter SRC: " SRC
 echo 'export SRC='$SRC >> $HOME/.bash_profile
 
+read -p "Enter Service: " Service
+echo 'export Service='$Service >> $HOME/.bash_profile
+
 read -p "Enter CHAIN_ID: " CHAIN_ID
 echo 'export CHAIN_ID='$CHAIN_ID >> $HOME/.bash_profile
 
@@ -39,7 +42,7 @@ git clone $GIT
 cd $SRC
 make install
 
-$SRC init $NODENAME --chain-id $CHAIN_ID
+$SRC init $OKPDNAME --chain-id $CHAIN_ID
 
 cd $HOME
 wget -qO $HOME/.$SRC/config/genesis.json $SRC_GENESIS
