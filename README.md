@@ -6,3 +6,4 @@ _____
 
 +
 +
+defundd q bank balances $(defundd keys show wallet -a)
