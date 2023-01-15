@@ -10,4 +10,4 @@ _____
 CHAIN=
 echo 'export CHAIN='$CHAIN >> $HOME/.bash_profile
 
-$CHAIN q bank balances $($CHAIN keys show wallet -a)
+" $CHAIN q bank balances $($CHAIN keys show wallet -a)   "
