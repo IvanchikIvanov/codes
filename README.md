@@ -6,4 +6,7 @@ _____
 
 +
 +
-defundd q bank balances $(defundd keys show wallet -a)
+
+CHAIN=
+echo 'export CHAIN='$CHAIN >> $HOME/.bash_profile
+$CHAIN q bank balances $($CHAIN keys show wallet -a)
